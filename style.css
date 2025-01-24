@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #555;
+}
+.btn-primary {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 10px 0;
+}
+
+.header .logo {
+        font-size: 0; 
+        margin: 0; 
+        float: left; 
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        height: 30px;
+}
+header.logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: #ffd000;
+}
+.intro {
+    background-color: #ffd000; 
+    padding: 40px 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.intro-content {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 1200px; 
+    gap: 20px; 
+}
+
+.intro-text {
+    width: 50%; 
+    text-align: left; 
+}
+
+.intro-text h2 {
+    font-size: 2rem; 
+    color: #025bb4;
+    margin-bottom: 20px; 
+}
+
+.intro-text p {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    color: #333; 
+}
+
+.intro-image {
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.intro-image img {
+    max-width: 500px; 
+    height: 500px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: right;
+ /* Limita o tamanho da imagem */
+    height: auto;
+}
+
+.plans {
+    background-color: #f4f4f4;
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.plans h2 {
+    font-size: 2.5rem; 
+    color: #003366; 
+    margin-bottom: 30px; 
+}
+
+.plan-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.plan-card {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    padding: 20px; 
+    text-align: left; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.plan-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.plan-card h3 {
+    font-size: 1.5rem; 
+    color: #0073e6; 
+    margin-bottom: 15px; 
+}
+
+.plan-card p {
+    font-size: 1rem; 
+    color: #333; 
+    margin-bottom: 15px;
+    line-height: 1.6; 
+}
+
+.plan-card ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-bottom: 0; 
+}
+
+.plan-card ul li {
+    font-size: 0.9rem; 
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
+
+
+.hero {
+    background:url('https://orlandoseguros.com.br/wp-content/uploads/2023/02/bannersite_seguros-1-1.png') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    width: 100%;
+    height: 20vh;
+}
+
+.btn-primary {
+    background: #0081f1;
+    color: rgb(32, 22, 22);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: #005bb5;
+}
+
+
+
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services-section h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Grid para os serviços */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Estilo dos cartões de serviço */
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo das imagens */
+.service-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta o comportamento de recorte */
+}
+
+/* Conteúdo dos cartões */
+.service-card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0056b3;
+}
+
+.service-card p {
+    padding: 0 15px 20px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact {
+    background: #ffffff;
+    padding: 40px 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0219eb;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilo geral da seção "Entre em Contato" */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    border-top: 3px solid #0056b3;
+}
+
+/* Estilo do formulário */
+.contact-form {
+    flex: 1 1 400px;
+    max-width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #0056b3;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+    outline: none;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #0046a0;
+}
+
+/* Estilo para informações de contato */
+.contact-info {
+    flex: 1 1 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: #0219eb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Estilo para os ícones de redes sociais no rodapé */
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer .social-media {
+    margin-top: 10px;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social-media img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsividade para dispositivos médios (tablets e celulares na horizontal) */
+@media (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text, .intro-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .plans .plan-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-item {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+/* Responsividade para dispositivos pequenos (celulares na vertical) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .intro {
+        padding: 30px 0;
+    }
+
+    .plans h2 {
+        font-size: 2rem;
+    }
+
+    .plan-card {
+        width: 90%;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .footer .social-media img {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .services-section {
+        padding: 30px 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Uma coluna em dispositivos pequenos */
+    }
+
+    .service-card {
+        max-width: 100%; /* Garante que ocupe a largura total */
+    }
+
+    .service-card img {
+        height: auto; /* Garante proporção correta das imagens */
+    }
+}
+
+
+/* Responsividade para dispositivos muito pequenos (menores que 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .intro {
+        padding: 20px 10px;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .plans h2 {
+        font-size: 1.5rem;
+    }
+
+    .plan-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .footer .social-media a {
+        margin: 0 5px;
+    }
+}
+
+
